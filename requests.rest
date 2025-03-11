@@ -1,0 +1,12 @@
+### Get all contacts
+GET http://localhost:8080/contacts
+
+### Get contact by ID (replace the ID with an actual ID from your database)
+GET http://localhost:8080/contacts/insertactualidhere
+
+### For testing after deployment
+### Get all contacts - Production
+GET https://your-app-name.onrender.com/contacts
+
+### Get contact by ID - Production
+GET https://your-app-name.onrender.com/contacts/insertactualidhere
