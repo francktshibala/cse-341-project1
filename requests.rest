@@ -2,7 +2,7 @@
 GET http://localhost:8080/contacts
 
 ### Get contact by ID 
-GET http://localhost:8080/contacts/67cfbb23a1a7cbea81ddd015
+GET https://contacts-api-sd5e.onrender.com/67cfbb23a1a7cbea81ddd015
 
 
 ### For testing after deployment
@@ -10,5 +10,5 @@ GET http://localhost:8080/contacts/67cfbb23a1a7cbea81ddd015
 GET https://contacts-api-sd5e.onrender.com/contacts
 
 ### Get contact by ID - Production
-GET https://contacts-api-sd5e.onrender.com/contacts
-/67cfbb45a1a7cbea81ddd01f
+GET https://contacts-api-sd5e.onrender.com/contacts/67cfbb45a1a7cbea81ddd01f
+
