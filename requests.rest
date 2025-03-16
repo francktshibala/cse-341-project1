@@ -2,13 +2,35 @@
 GET http://localhost:8080/contacts
 
 ### Get contact by ID 
-GET https://contacts-api-sd5e.onrender.com/67cfbb23a1a7cbea81ddd015
+GET http://localhost:8080/contacts/67cfbb45a1a7cbea81ddd01f
+
+### Create a new contact
+
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Rice",
+  "lastName": "Beans",
+  "email": "Rice.beans@example.com",
+  "favoriteColor": "white",
+  "birthday": "1990-01-01"
+}
+
+### Update a contact 
+PUT http://localhost:8080/contacts/67cfbb23a1a7cbea81ddd015
+
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.updated@example.com",
+  "favoriteColor": "green",
+  "birthday": "1990-01-01"
+}
+console.log(updatedContact);
 
 
-### For testing after deployment
-### Get all contacts - Production
-GET https://contacts-api-sd5e.onrender.com/contacts
-
-### Get contact by ID - Production
-GET https://contacts-api-sd5e.onrender.com/contacts/67cfbb45a1a7cbea81ddd01f
-
+### Delete a contact 
+DELETE https://contacts-api-sd5e.onrender.com/contacts/67cfbb23a1a7cbea81ddd015
